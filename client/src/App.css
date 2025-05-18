@@ -1,0 +1,150 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3498dbaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Container and sections */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-section,
+.merkle-section,
+.mint-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+}
+
+/* Buttons */
+.connect-button,
+.action-button {
+  background-color: #3498db;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+  transition: all 0.2s ease;
+}
+
+.connect-button:hover,
+.action-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.connect-button:disabled,
+.action-button:disabled {
+  background-color: #cbd5e0;
+  color: #718096;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Form elements */
+.input-field {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #4a5568;
+  transition: border-color 0.2s ease;
+}
+
+.input-field:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Status messages */
+.error-message {
+  background-color: rgba(231, 76, 60, 0.1);
+  border: 1px solid #e74c3c;
+  color: #c0392b;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.success-message {
+  background-color: rgba(46, 204, 113, 0.1);
+  border: 1px solid #2ecc71;
+  color: #27ae60;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.account-info {
+  padding: 0.5rem;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.tx-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.tx-link:hover {
+  color: #2980b9;
+}
