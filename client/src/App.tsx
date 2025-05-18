@@ -3,7 +3,7 @@ import { createPublicClient, createWalletClient, custom, http } from "viem";
 import { sepolia } from "viem/chains";
 import "viem/window";
 import { CONTRACT_ABI, CONTRACT_ADDRESS } from "./utils/contract";
-import { generateProof } from "./utils/helpers";
+import { generateProof } from "./utils/merkle";
 import "./App.css";
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
 
     try {
       const walletClient = createWalletClient({
-        account: account,
+        account,
         chain: sepolia,
         transport: custom(window.ethereum),
       });
